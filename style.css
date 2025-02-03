@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+main {
+    background: url("https://t4.ftcdn.net/jpg/05/71/83/47/240_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg") no-repeat center center/cover;
+    
+    min-height: 100vh; /* Ensure it takes full viewport height */
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.sobre{
+    color: white;
+    width: 100%;
+    display: flex;
+    padding: 50px;
+}
+
+.sobre > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    
+    
+}
+
+.esquerda-sobre{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda-sobre > img{
+    width: 450px;
+    border-radius: 100%;
+}
+
+.direita-sobre > p > span{
+    font-weight: 800;
+}
+
+.direita-sobre > p:nth-child(1){
+    font-size: 32px;
+}
+
+.direita-sobre > p:nth-child(2){
+    font-size: 18px;
+}
