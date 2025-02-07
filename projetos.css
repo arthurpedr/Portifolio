@@ -1,0 +1,34 @@
+.lista-projetos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+
+}
+
+.projeto-elemento{
+    width: 350px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    display: flex;
+    align-items:end;
+    border-radius: 10px;
+}
+
+.projeto-elemento > div > a{
+    text-decoration: none;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.projeto-elemento > div{
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+}

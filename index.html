@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="sections.css">
+    <link rel="stylesheet" href="projetos.css">
     <title>Pedro Arthur - Portifolio</title>
 </head>
+
 <body>
 
 
@@ -16,46 +19,107 @@
     <main>
         <header>
             <div class="esquerda-header">
-                <div class="imagem-header">
-                    <img src="5024509.png" alt="#">
-                </div>
+
                 <div class="texto">
-                    <h1>PEDRO</h1>
+                    <h1>&lt;Pedro/&gt;</h1>
                 </div>
             </div>
             <nav class="menu">
                 <ul>
-                    <li><a href="#sobre">Sobre mim</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#projetos">Projeto</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a class="scroll-link" href="#mim">Sobre mim</a></li>
+                    <li><a class="scroll-link" href="#habilidades">Habilidades</a></li>
+                    <li><a class="scroll-link" href="#projetos">Projeto</a></li>
+                    <li><a class="scroll-link" href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </header>
 
         <section class="sobre">
-            <div class="esquerda-sobre"><img src="https://wallpapers.com/images/high/daffy-duck-shrug-pose-qfb2hoq9splmhai7.webp" alt="Pedro Arthur"></div>
+            <div class="esquerda-sobre"><img
+                    src="https://wallpapers.com/images/high/daffy-duck-shrug-pose-qfb2hoq9splmhai7.webp"
+                    alt="Pedro Arthur"></div>
             <div class="direita-sobre">
-                
+
                 <p>Olá! Sou <span>Pedro Arthur</span>, desenvolvedor Frontend.</p>
                 <p>
                     Crio interfaces modernas e responsivas para a melhor
                     experiência do usuário.
                 </p>
-                
+
 
             </div>
         </section>
 
-        <secttion id="sobre">
+        <section id="mim">
             <h1>Sobre Mim</h1>
-        </secttion>
-        <secttion id="habilidades">
+
+            <p>
+                Olá! Sou um Desenvolvedor Front-end apaixonado por tecnologia, inovação e a criação de experiências
+                digitais envolventes. Atualmente, curso Ciência e Tecnologia na UFERSA, onde busco constantemente
+                aprimorar meus conhecimentos e habilidades para me tornar um profissional cada vez mais completo na área
+                de desenvolvimento web.<br /><br />
+
+                Tenho experiência com HTML e CSS, focando na construção de interfaces responsivas e bem estruturadas. Em
+                breve, iniciarei meus estudos em JavaScript, aprofundando minha capacidade de criar aplicações mais
+                dinâmicas e interativas. Além disso, estou sempre explorando novas tecnologias e tendências para
+                expandir minha expertise e acompanhar as melhores práticas do mercado.<br /><br />
+
+                Sou movido por desafios e acredito que a melhor forma de evoluir é construindo projetos que solucionem
+                problemas reais. Meu objetivo é desenvolver aplicações intuitivas, eficientes e acessíveis,
+                proporcionando a melhor experiência possível para os usuários.
+            </p>
+
+        </section>
+        <section id="habilidades">
             <h1>Habilidades</h1>
-        </secttion>
-        <secttion id="projetos">
+
+            <div class="lista-habilidades">
+                <div>
+                    <p>HTML</p>
+                    <img src="html.png" alt="">
+                </div>
+                <div>
+                    <p>CSS</p>
+                    <img src="css-3.png" alt="">
+                </div>
+                <div>
+                    <p>JavaScript</p>
+                    <img src="js.png" alt="">
+                </div>
+                <div>
+                    <p>C</p>
+                    <img src="letra-c.png" alt="">
+                </div>
+            </div>
+
+        </section>
+        <section id="projetos">
             <h1>Projetos</h1>
-        </secttion>
+
+            <div class="lista-projetos">
+                <div style="background-image: url(./Captura\ de\ tela\ 2025-02-03\ 204152.png);" class="projeto-elemento">
+                    <div>
+                        <a href="/">Link para o projeto</a>
+                        <a href="">Repositorio</a>
+                    </div>
+                </div>
+
+                <div style="background-image: url(./Captura\ de\ tela\ 2025-02-03\ 204246.png);" class="projeto-elemento">
+                    <div>
+                        <a href="/">Link para o projeto</a>
+                        <a href="">Repositorio</a>
+                    </div>
+                </div>
+
+                <div style="background-image: url(./DALL·E\ 2025-02-03\ 20.49.28\ -\ A\ minimalistic\ black\ background\ with\ the\ phrase\ \'Em\ Breve\'\ written\ in\ elegant\ white\ text.\ The\ text\ should\ be\ slightly\ tilted\ for\ a\ dynamic\ effect.webp);" class="projeto-elemento">
+                    <div>
+                        <a href="/">Link para o projeto</a>
+                        <a href="">Repositorio</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
         <footer class="footer">
 
@@ -77,11 +141,21 @@
 
             </div>
 
-            <p>&copy;Pedro Arthur</p>
+            <p>&copy;Pedro Arthur 2025</p>
 
         </footer>
     </main>
 
+    <script>
+        // Seleciona todos os links do menu que possuem a classe "scroll-link"
+        document.querySelectorAll('.scroll-link').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Impede o comportamento padrão do link
+                const targetId = this.getAttribute('href').substring(1); // Obtém o ID do destino
+                document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+            });
+        });
+    </script>
 
 </body>
 

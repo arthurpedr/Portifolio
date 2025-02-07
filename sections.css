@@ -1,0 +1,35 @@
+
+
+
+#mim,#habilidades,#projetos{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 18px;
+    gap: 20px;
+    max-width: 1169px;
+    height: 70vh;
+    overflow: hidden; 
+}
+
+.lista-habilidades{
+    font-size: 24px;
+    gap: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-habilidades > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 150px;
+    height: 100px;
+    gap: 10px;
+}
