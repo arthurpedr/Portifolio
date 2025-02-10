@@ -10,7 +10,7 @@
 
 
 main {
-    background: url("https://t4.ftcdn.net/jpg/05/71/83/47/240_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg") no-repeat center center/cover;
+    background: url("https://i.pinimg.com/736x/00/5d/a3/005da3629a4755675c100763eecfc2ee.jpg") no-repeat center center/cover;
     
     min-height: 100vh; /* Ensure it takes full viewport height */
     display: flex;
@@ -49,7 +49,7 @@ main {
 }
 
 .esquerda-sobre > img{
-    width: 450px;
+    width: 400px;
     border-radius: 100%;
 }
 

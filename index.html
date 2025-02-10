@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="sections.css">
-    <link rel="stylesheet" href="projetos.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/sections.css">
+    <link rel="stylesheet" href="CSS/projetos.css">
     <title>Pedro Arthur - Portifolio</title>
 </head>
 
@@ -36,7 +36,7 @@
 
         <section class="sobre">
             <div class="esquerda-sobre"><img
-                    src="https://wallpapers.com/images/high/daffy-duck-shrug-pose-qfb2hoq9splmhai7.webp"
+                    src="IMG/pedro.jpg"
                     alt="Pedro Arthur"></div>
             <div class="direita-sobre">
 
@@ -76,19 +76,19 @@
             <div class="lista-habilidades">
                 <div>
                     <p>HTML</p>
-                    <img src="html.png" alt="">
+                    <img src="IMG/icons8-html-144.png" alt="HTML">
                 </div>
                 <div>
                     <p>CSS</p>
-                    <img src="css-3.png" alt="">
+                    <img src="IMG/icons8-css-144.png" alt="CSS">
                 </div>
                 <div>
                     <p>JavaScript</p>
-                    <img src="js.png" alt="">
+                    <img src="IMG/icons8-js-144.png" alt="JAVASCRIPT">
                 </div>
                 <div>
                     <p>C</p>
-                    <img src="letra-c.png" alt="">
+                    <img src="IMG/icons8-programação-c-144.png" alt="C">
                 </div>
             </div>
 
@@ -97,21 +97,21 @@
             <h1>Projetos</h1>
 
             <div class="lista-projetos">
-                <div style="background-image: url(./Captura\ de\ tela\ 2025-02-03\ 204152.png);" class="projeto-elemento">
+                <div style="background-image: url(IMG/Captura\ de\ tela\ 2025-02-03\ 204152.png);" class="projeto-elemento">
                     <div>
                         <a href="/">Link para o projeto</a>
                         <a href="">Repositorio</a>
                     </div>
                 </div>
 
-                <div style="background-image: url(./Captura\ de\ tela\ 2025-02-03\ 204246.png);" class="projeto-elemento">
+                <div style="background-image: url(IMG/Captura\ de\ tela\ 2025-02-03\ 204246.png);" class="projeto-elemento">
                     <div>
                         <a href="/">Link para o projeto</a>
                         <a href="">Repositorio</a>
                     </div>
                 </div>
 
-                <div style="background-image: url(./DALL·E\ 2025-02-03\ 20.49.28\ -\ A\ minimalistic\ black\ background\ with\ the\ phrase\ \'Em\ Breve\'\ written\ in\ elegant\ white\ text.\ The\ text\ should\ be\ slightly\ tilted\ for\ a\ dynamic\ effect.webp);" class="projeto-elemento">
+                <div style="background-image: url(IMG/DALL·E\ 2025-02-03\ 20.49.28\ -\ A\ minimalistic\ black\ background\ with\ the\ phrase\ \'Em\ Breve\'\ written\ in\ elegant\ white\ text.\ The\ text\ should\ be\ slightly\ tilted\ for\ a\ dynamic\ effect.webp);" class="projeto-elemento">
                     <div>
                         <a href="/">Link para o projeto</a>
                         <a href="">Repositorio</a>
@@ -127,7 +127,7 @@
                 <h1>Contato</h1>
                 <h3>Entrar em contato</h3>
 
-                <form action="" class="conteiner-contato">
+                <form action="https://formspree.io/f/mjkgonza" class="conteiner-contato" id="meuFormulario"  method="POST">
 
                     <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
 
@@ -136,9 +136,9 @@
 
                     <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
 
-                    <button type="submit" onclick="alert('Mensagem enviada!')">Enviar mensagem</button>
+                    <button type="submit">Enviar mensagem</button>
                 </form>
-
+                <p id="mensagemSucesso" style="display:none; color: green; font-weight: bold;"></p>
             </div>
 
             <p>&copy;Pedro Arthur 2025</p>
@@ -146,16 +146,7 @@
         </footer>
     </main>
 
-    <script>
-        // Seleciona todos os links do menu que possuem a classe "scroll-link"
-        document.querySelectorAll('.scroll-link').forEach(link => {
-            link.addEventListener('click', function(event) {
-                event.preventDefault(); // Impede o comportamento padrão do link
-                const targetId = this.getAttribute('href').substring(1); // Obtém o ID do destino
-                document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
-            });
-        });
-    </script>
+    <script src="JS/script.js" ></script>
 
 </body>
 
