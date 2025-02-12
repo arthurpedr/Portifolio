@@ -37,3 +37,30 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
+function HideMenu() {
+    const menu = document.getElementById("tags"); // Pegando o menu
+    const scrollLinks = document.getElementsByClassName("scroll-link");
+    const  tag = document.getElementsByClassName("tags"); // Pegando todos os links
+
+    menu.style.display = "block"; // Garante que o menu esteja visível
+
+    // Adiciona um evento de clique a cada link do menu
+    for (let i = 0; i < scrollLinks.length; i++) {
+        scrollLinks[i].addEventListener("click", function () {
+            menu.style.display = "none"; // Esconde o menu ao clicar no link
+        });
+    }  
+
+}
+document.addEventListener("DOMContentLoaded", function () {
+    const menu = document.getElementById("tags");
+
+    // Evento para fechar o menu ao clicar dentro do menu, mas fora das <li>
+    menu.addEventListener("click", function (event) {
+        if (event.target === menu) { // Verifica se o clique foi diretamente no <ul>
+            menu.style.display = "none"; // Esconde o menu
+        }
+    });
+});

@@ -15,6 +15,13 @@
     overflow: hidden; 
 }
 
+@media (max-width: 768px) {
+    #mim{
+        text-align: center;
+    }
+}
+
+
 .lista-habilidades{
     font-size: 24px;
     gap: 70px;

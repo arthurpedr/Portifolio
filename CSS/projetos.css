@@ -7,6 +7,17 @@
 
 }
 
+@media (max-width: 1165px) {
+    #projetos{
+        height: 100vh;
+    }
+}
+@media (max-width: 765px) {
+    #projetos{
+        height: 150vh !important;
+    }
+}
+
 .projeto-elemento{
     width: 350px;
     height: 250px;

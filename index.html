@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="CSS/sections.css">
     <link rel="stylesheet" href="CSS/projetos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Pedro Arthur - Portifolio</title>
 </head>
 
@@ -25,12 +26,25 @@
                 </div>
             </div>
             <nav class="menu">
-                <ul>
+                <ul class="menu-hamburguer" id="menu-hamburguer">
                     <li><a class="scroll-link" href="#mim">Sobre mim</a></li>
                     <li><a class="scroll-link" href="#habilidades">Habilidades</a></li>
                     <li><a class="scroll-link" href="#projetos">Projeto</a></li>
                     <li><a class="scroll-link" href="#contato">Contato</a></li>
                 </ul>
+                <div class="hamburger" id="hamburger" onclick="HideMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <div class="tags" id="tags">
+                    <ul class="tags-secundarias" id="tags-secundarias">
+                        <li><a class="scroll-link" href="#mim">Sobre mim</a></li>
+                        <li><a class="scroll-link" href="#habilidades">Habilidades</a></li>
+                        <li><a class="scroll-link" href="#projetos">Projeto</a></li>
+                        <li><a class="scroll-link" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
             </nav>
         </header>
 
