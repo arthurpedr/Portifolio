@@ -1,6 +1,6 @@
 // Seleciona todos os links do menu que possuem a classe "scroll-link"
 document.querySelectorAll('.scroll-link').forEach(link => {
-    link.addEventListener('click', function(event) {
+    link.addEventListener('click', function (event) {
         event.preventDefault(); // Impede o comportamento padrão do link
         const targetId = this.getAttribute('href').substring(1); // Obtém o ID do destino
         document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
@@ -8,8 +8,8 @@ document.querySelectorAll('.scroll-link').forEach(link => {
 });
 
 // Aguarda o carregamento do DOM antes de adicionar o evento ao formulário
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("meuFormulario").addEventListener("submit", function(event) {
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("meuFormulario").addEventListener("submit", function (event) {
         event.preventDefault(); // Impede o envio padrão do formulário
 
         const form = this;
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function HideMenu() {
     const menu = document.getElementById("tags"); // Pegando o menu
     const scrollLinks = document.getElementsByClassName("scroll-link");
-    const  tag = document.getElementsByClassName("tags"); // Pegando todos os links
+    const tag = document.getElementsByClassName("tags"); // Pegando todos os links
 
     menu.style.display = "block"; // Garante que o menu esteja visível
 
@@ -51,7 +51,7 @@ function HideMenu() {
         scrollLinks[i].addEventListener("click", function () {
             menu.style.display = "none"; // Esconde o menu ao clicar no link
         });
-    }  
+    }
 
 }
 document.addEventListener("DOMContentLoaded", function () {

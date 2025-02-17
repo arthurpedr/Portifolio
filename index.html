@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/header.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/footer.css">
-    <link rel="stylesheet" href="CSS/sections.css">
-    <link rel="stylesheet" href="CSS/projetos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/sections.css">
+    <link rel="stylesheet" href="./CSS/projetos.css">
+    <link rel="stylesheet" href="./https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Pedro Arthur - Portifolio</title>
 </head>
 
@@ -49,9 +49,7 @@
         </header>
 
         <section class="sobre">
-            <div class="esquerda-sobre"><img
-                    src="IMG/pedro.jpg"
-                    alt="Pedro Arthur"></div>
+            <div class="esquerda-sobre"><img src="./IMG/pedro.jpg" alt="Pedro Arthur"></div>
             <div class="direita-sobre">
 
                 <p>Olá! Sou <span>Pedro Arthur</span>, desenvolvedor Frontend.</p>
@@ -90,19 +88,23 @@
             <div class="lista-habilidades">
                 <div>
                     <p>HTML</p>
-                    <img src="IMG/icons8-html-144.png" alt="HTML">
+                    <img src="./IMG/icons8-html-144.png" alt="HTML">
                 </div>
                 <div>
                     <p>CSS</p>
-                    <img src="IMG/icons8-css-144.png" alt="CSS">
+                    <img src="./IMG/icons8-css-144.png" alt="CSS">
                 </div>
                 <div>
                     <p>JavaScript</p>
-                    <img src="IMG/icons8-js-144.png" alt="JAVASCRIPT">
+                    <img src="./IMG/icons8-js-144.png" alt="JAVASCRIPT">
+                </div>
+                <div>
+                    <p>Tailwind</p>
+                    <img src="./IMG/icons8-tailwind-css-144.png" alt="TAILWIND">
                 </div>
                 <div>
                     <p>C</p>
-                    <img src="IMG/icons8-programação-c-144.png" alt="C">
+                    <img src="./IMG/icons8-programação-c-144.png" alt="C">
                 </div>
             </div>
 
@@ -111,21 +113,21 @@
             <h1>Projetos</h1>
 
             <div class="lista-projetos">
-                <div style="background-image: url(IMG/Captura\ de\ tela\ 2025-02-03\ 204152.png);" class="projeto-elemento">
+                <div class="projeto-elemento" id="YU-GI-OH">
+                    <div>
+                        <a href="https://arthurpedr.github.io/Projeto-Yu-Gi-Oh/">Link para o projeto</a>
+                        <a href="https://github.com/arthurpedr/Projeto-Yu-Gi-Oh">Repositorio</a>
+                    </div>
+                </div>
+
+                <div class="projeto-elemento" id="Landingpage">
                     <div>
                         <a href="/">Link para o projeto</a>
                         <a href="">Repositorio</a>
                     </div>
                 </div>
 
-                <div style="background-image: url(IMG/Captura\ de\ tela\ 2025-02-03\ 204246.png);" class="projeto-elemento">
-                    <div>
-                        <a href="/">Link para o projeto</a>
-                        <a href="">Repositorio</a>
-                    </div>
-                </div>
-
-                <div style="background-image: url(IMG/DALL·E\ 2025-02-03\ 20.49.28\ -\ A\ minimalistic\ black\ background\ with\ the\ phrase\ \'Em\ Breve\'\ written\ in\ elegant\ white\ text.\ The\ text\ should\ be\ slightly\ tilted\ for\ a\ dynamic\ effect.webp);" class="projeto-elemento">
+                <div class="projeto-elemento" id="embreve">
                     <div>
                         <a href="/">Link para o projeto</a>
                         <a href="">Repositorio</a>
@@ -141,7 +143,8 @@
                 <h1>Contato</h1>
                 <h3>Entrar em contato</h3>
 
-                <form action="https://formspree.io/f/mjkgonza" class="conteiner-contato" id="meuFormulario"  method="POST">
+                <form action="https://formspree.io/f/mjkgonza" class="conteiner-contato" id="meuFormulario"
+                    method="POST">
 
                     <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
 
@@ -152,7 +155,7 @@
 
                     <button type="submit">Enviar mensagem</button>
                 </form>
-                <p id="mensagemSucesso" style="display:none; color: green; font-weight: bold;"></p>
+                <p id="mensagemSucesso"></p>
             </div>
 
             <p>&copy;Pedro Arthur 2025</p>
@@ -160,7 +163,7 @@
         </footer>
     </main>
 
-    <script src="JS/script.js" ></script>
+    <script src="./JS/script.js"></script>
 
 </body>
 

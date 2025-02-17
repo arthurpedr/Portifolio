@@ -1,4 +1,4 @@
-.lista-projetos{
+.lista-projetos {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -8,17 +8,18 @@
 }
 
 @media (max-width: 1165px) {
-    #projetos{
+    #projetos {
         height: 100vh;
     }
 }
+
 @media (max-width: 765px) {
-    #projetos{
+    #projetos {
         height: 150vh !important;
     }
 }
 
-.projeto-elemento{
+.projeto-elemento {
     width: 350px;
     height: 250px;
     background-repeat: no-repeat;
@@ -26,11 +27,11 @@
     background-position: center;
     padding: 20px;
     display: flex;
-    align-items:end;
+    align-items: end;
     border-radius: 10px;
 }
 
-.projeto-elemento > div > a{
+.projeto-elemento>div>a {
     text-decoration: none;
     background-color: gray;
     padding: 5px;
@@ -38,8 +39,20 @@
     color: white;
 }
 
-.projeto-elemento > div{
+.projeto-elemento>div {
     justify-content: space-around;
     display: flex;
     width: 100%;
+}
+
+#YU-GI-OH {
+    background-image: url(../IMG/Captura\ de\ tela\ 2025-02-03\ 204246.png);
+}
+
+#Landingpage {
+    background-image: url(../IMG/Captura\ de\ tela\ 2025-02-03\ 204152.png);
+}
+
+#embreve {
+    background-image: url(../IMG/embreve.webp);
 }

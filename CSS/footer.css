@@ -1,27 +1,26 @@
-.footer{
+.footer {
     width: 100%;
     padding: 20px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    backdrop-filter: blur(5px);
     color: white;
     gap: 20px;
 }
 
-.contato{
+.contato {
     display: flex;
     flex-direction: column;
     width: 70%;
 
-   
+
 }
 
-.contato > h1{
+.contato>h1 {
     text-align: center;
 }
 
-.conteiner-contato{
+.conteiner-contato {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -29,28 +28,35 @@
     padding: 10px 0px;
 }
 
-.conteiner-contato > input, .conteiner-contato > textarea{
+.conteiner-contato>input,
+.conteiner-contato>textarea {
     width: 100%;
     border-radius: 10px;
     padding: 10px;
 
 }
 
-.conteiner-contato > textarea{
+.conteiner-contato>textarea {
     height: 120px;
     resize: none;
 }
 
-.conteiner-contato > button{
+.conteiner-contato>button {
     border-radius: 20px;
     padding: 10px;
     cursor: pointer;
-    font-weight: 600;
-    background-color: black;
+    font-weight: 700;
+    background-color: rgba(90, 85, 85, 0.539);
     color: white;
 }
 
-.conteiner-contato > button:hover{
+.conteiner-contato>button:hover {
     background-color: rgb(96, 95, 95);
     transition: all 0.2s ease;
+}
+
+.MesagemSucesso {
+    display: none;
+    color: green;
+    font-weight: bold;
 }

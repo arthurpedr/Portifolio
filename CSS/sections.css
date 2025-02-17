@@ -1,7 +1,6 @@
-
-
-
-#mim,#habilidades,#projetos{
+#mim,
+#habilidades,
+#projetos {
     color: white;
     display: flex;
     justify-content: center;
@@ -12,17 +11,17 @@
     gap: 20px;
     max-width: 1169px;
     height: 70vh;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 @media (max-width: 768px) {
-    #mim{
+    #mim {
         text-align: center;
     }
 }
 
 
-.lista-habilidades{
+.lista-habilidades {
     font-size: 24px;
     gap: 70px;
     display: flex;
@@ -31,7 +30,7 @@
     justify-content: center;
 }
 
-.lista-habilidades > div{
+.lista-habilidades>div {
     display: flex;
     align-items: center;
     flex-direction: column;
