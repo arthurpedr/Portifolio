@@ -45,6 +45,7 @@ main {
     .sobre {
         flex-direction: column;
         gap: 20px;
+        padding: 0px 25px;
     }
 
     .esquerda-sobre>img {
