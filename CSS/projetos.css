@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 70px;
     flex-wrap: wrap;
 
 }
@@ -20,39 +20,54 @@
 }
 
 .projeto-elemento {
-    width: 350px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
     height: 250px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    display: flex;
-    align-items: end;
-    border-radius: 10px;
 }
 
-.projeto-elemento>div>a {
-    text-decoration: none;
-    background-color: gray;
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
+.projeto-elemento:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    
 }
 
-.projeto-elemento>div {
-    justify-content: space-around;
+.projeto-elemento p {
+    opacity: 0;
+}
+
+.projeto-elemento:hover p {
+    opacity: 1;
+}
+
+#YU-GI-OH{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#YU-GI-OH img{
     width: 100%;
 }
 
-#YU-GI-OH {
-    background-image: url(../IMG/Captura\ de\ tela\ 2025-02-03\ 204246.png);
-}
-
 #Landingpage {
-    background-image: url(../IMG/Captura\ de\ tela\ 2025-02-03\ 204152.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#embreve {
-    background-image: url(../IMG/Captura\ de\ tela\ 2025-02-24\ 205842.png);
+#Landingpage img{
+    width: 100%;
+}
+
+#Clone_Banco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Clone_Banco img{
+    width: 100%;
 }

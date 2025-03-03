@@ -8,11 +8,13 @@
     flex-direction: column;
     font-weight: 700;
     font-size: 18px;
-    gap: 20px;
+    gap: 40px;
     max-width: 1169px;
-    height: 70vh;
+    height: 100vh;
     overflow: hidden;
 }
+
+/*SOBRE MIM*/
 
 @media (max-width: 768px) {
     #mim {
@@ -23,6 +25,21 @@
     }
 }
 
+.text-mim{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.redes-sociais{
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/*HABILIDADES*/
 
 .lista-habilidades {
     font-size: 24px;
