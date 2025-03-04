@@ -4,7 +4,6 @@
     justify-content: center;
     gap: 70px;
     flex-wrap: wrap;
-
 }
 
 @media (max-width: 1165px) {
@@ -31,7 +30,6 @@
 .projeto-elemento:hover {
     transform: scale(1.2);
     transition: 0.5s;
-    
 }
 
 .projeto-elemento p {

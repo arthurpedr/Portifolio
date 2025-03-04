@@ -7,8 +7,6 @@
     font-family: "Fira Sans Condensed", serif;
 }
 
-
-
 main {
     background-color: black;
     min-height: 100vh;
@@ -18,8 +16,6 @@ main {
     justify-content: space-between;
 
 }
-
-
 
 .sobre {
     color: white;
@@ -64,6 +60,7 @@ main {
 .esquerda-sobre>img {
     width: 400px;
     border-radius: 100%;
+    opacity: 90%;
 }
 
 .direita-sobre>p>span {

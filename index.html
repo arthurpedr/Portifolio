@@ -159,12 +159,21 @@
                 <form action="https://formspree.io/f/mjkgonza" class="conteiner-contato" id="meuFormulario"
                     method="POST">
 
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    <div class="input-container">
+                        <input type="text" id="nome" name="nome" placeholder=" " required>
+                        <label for="nome">Nome</label>
+                    </div>
 
 
-                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    <div class="input-container">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">E-mail</label>
+                    </div>
 
-                    <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+                    <div class="input-container">
+                        <input type="text" id="mensagem" name="mensagem" placeholder=" " required>
+                        <label for="mensagem">Mensagem</label>
+                    </div>
 
                     <button type="submit">Enviar mensagem</button>
                 </form>
