@@ -6,30 +6,23 @@
     flex-wrap: wrap;
 }
 
-@media (max-width: 1165px) {
-    #projetos {
-        height: 100vh;
-    }
-}
-
 @media (max-width: 765px) {
     #projetos {
         height: 150vh !important;
     }
+    .projeto-elemento {
+        width: 250px;
+    }
 }
 
 .projeto-elemento {
+    transform: scale(0.9);
     gap: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 400px;
     height: 250px;
-}
-
-.projeto-elemento:hover {
-    transform: scale(1.2);
-    transition: 0.5s;
 }
 
 .projeto-elemento p {
@@ -68,4 +61,17 @@
 
 #Clone_Banco img{
     width: 100%;
+}
+
+/*PARTE DO HOVER PROJETO*/
+
+.lista-projetos.dim .projeto-elemento {
+    transform: scale(0.8);
+    filter: grayscale(100%);
+    transition: 0.5s ;
+}
+.lista-projetos.dim .projeto-elemento:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    opacity: 1;
 }

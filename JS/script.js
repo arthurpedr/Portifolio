@@ -68,3 +68,18 @@ document.addEventListener("DOMContentLoaded", function () {
 function abrirProjeto(url) {
     window.open(url, '_blank');
 }
+
+/*FUNÇÃO PARA HOVER DE PROJETOS*/
+
+const container = document.querySelector('.lista-projetos');
+const projetos = document.querySelectorAll('.projeto-elemento');
+
+projetos.forEach(projeto => {
+    projeto.addEventListener('mouseenter', () => {
+        container.classList.add('dim');
+    });
+
+    projeto.addEventListener('mouseleave', () => {
+        container.classList.remove('dim');
+    });
+});
