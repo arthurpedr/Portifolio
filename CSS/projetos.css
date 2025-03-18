@@ -1,17 +1,20 @@
 .lista-projetos {
     width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 70px;
+    justify-content: space-evenly;
+    gap: 30px;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 @media (max-width: 765px) {
     #projetos {
-        height: 150vh !important;
+        height: auto !important;
     }
     .projeto-elemento {
-        width: 250px;
+        width: 90%;  /* Ajusta a largura em telas menores */
+        max-width: 250px;  /* Máximo de 250px de largura */
+        margin: 10px 0;
     }
 }
 
@@ -19,10 +22,19 @@
     transform: scale(0.9);
     gap: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 250px;
+    width: 500px;
+    height: 300px;
+    transition: transform 0.3s ease, filter 0.3s ease;  /* Adiciona suavidade nas transições */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.projeto-elemento img {
+    width: 80%;
+    height: 80%;
 }
 
 .projeto-elemento p {
@@ -33,42 +45,12 @@
     opacity: 1;
 }
 
-#YU-GI-OH{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#YU-GI-OH img{
-    width: 100%;
-}
-
-#Landingpage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#Landingpage img{
-    width: 100%;
-}
-
-#Clone_Banco {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#Clone_Banco img{
-    width: 100%;
-}
-
 /*PARTE DO HOVER PROJETO*/
 
 .lista-projetos.dim .projeto-elemento {
     transform: scale(0.8);
     filter: grayscale(100%);
-    transition: 0.5s ;
+    transition: 0.5s ease, filter 0.5s ease, opacity 0.5s ease;
 }
 .lista-projetos.dim .projeto-elemento:hover {
     transform: scale(1.1);
