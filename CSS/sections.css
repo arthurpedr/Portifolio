@@ -16,14 +16,11 @@
 
 #mim {
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
     font-weight: 700;
     font-size: 18px;
-    gap: 40px;
-    max-width: 1169px;
-    height: 100%;
     overflow: hidden; 
     position: relative;
 }
@@ -38,6 +35,11 @@
   text-align: center;
 }
 
+@media (max-width: 1050px) {
+    #mim {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 @media (max-width: 1000px) {
     #mim {
         flex-direction: column;
@@ -48,12 +50,20 @@
     }
 }
 @media (max-width: 550px) {
+    #mim {
+        height: 120vh;
+    }
     .text-mim {
         width: 400px !important;
     }
     .text-mim p{
         font-size: 18px;
-    } 
+    }
+}
+@media (max-width: 415px) {
+    .direita-img img{
+        margin-right: 10px !important;
+    }
 }
 
 .text-mim{
@@ -73,14 +83,16 @@
     gap: 20px;
 }
 
-.direita-img{
-    display: flex;
+.direita-img {
+    width: 100%;
+    text-align: center; 
 }
 
 .direita-img img{
     width: 400px;
+    height: 400px;
     opacity: 90%;
-    margin-left: 40px;
+    margin: 80px auto 0 auto;
 }
 
 /*HABILIDADES*/
