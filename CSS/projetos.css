@@ -1,20 +1,17 @@
 .lista-projetos {
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
-@media (max-width: 765px) {
-    #projetos {
-        height: auto !important;
+@media (max-width: 1010px) {
+    .lista-projetos{
+        grid-template-columns: repeat(1, 1fr);
     }
-    .projeto-elemento {
-        width: 90%;  /* Ajusta a largura em telas menores */
-        max-width: 250px;  /* Máximo de 250px de largura */
-        margin: 10px 0;
+    #projetos{
+        height: 100%;
     }
 }
 
@@ -30,20 +27,51 @@
     transition: transform 0.3s ease, filter 0.3s ease;  /* Adiciona suavidade nas transições */
     border-radius: 8px;
     overflow: hidden;
+    position: relative;
 }
+
+.projeto-elemento:hover {
+    transform: translateY(-5px);
+  }
 
 .projeto-elemento img {
     width: 80%;
     height: 80%;
 }
 
-.projeto-elemento p {
-    opacity: 0;
+.projeto-elemento:hover p {
+    transform: translateY(-5px);
 }
 
-.projeto-elemento:hover p {
+/* Modal inicial oculto */
+.modal-hover {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 80%;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+/* Conteúdo do modal */
+.modal-content {
+    background: rgba(128, 128, 128, 0.804);
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+    text-align: center;
+  }
+
+  
+.projeto-elemento:hover .modal-hover {
     opacity: 1;
-}
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+  }
 
 /*PARTE DO HOVER PROJETO*/
 
