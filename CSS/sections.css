@@ -15,9 +15,12 @@
 }
 
 #mim {
+    width: 100%;
+    height: 90vh;
     color: white;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
     font-weight: 700;
     font-size: 18px;
@@ -35,36 +38,29 @@
   text-align: center;
 }
 
-@media (max-width: 1050px) {
-    #mim {
-        grid-template-columns: repeat(1, 1fr);
-    }
+.lista-mim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
-@media (max-width: 1000px) {
+
+@media (max-width: 1044px) {
     #mim {
-        flex-direction: column;
         height: 130vh;
     }
     .text-mim p{
         text-align: center;
     }
 }
+
 @media (max-width: 550px) {
-    #mim {
-        height: 120vh;
-    }
-    .text-mim {
-        width: 400px !important;
-    }
     .text-mim p{
         font-size: 18px;
     }
 }
-@media (max-width: 415px) {
-    .direita-img img{
-        margin-right: 10px !important;
-    }
-}
+
 
 .text-mim{
     width: 500px;
@@ -72,27 +68,23 @@
     flex-direction: column;
     font-size: 22px;
     gap: 20px;
-    margin-top: 80px;
 }
 
 .redes-sociais{
     display: flex;
     align-items: end;
     justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 }
 
-.direita-img {
-    width: 100%;
-    text-align: center; 
+.direita-img{
+    display: flex;
 }
 
 .direita-img img{
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: auto;
     opacity: 90%;
-    margin: 80px auto 0 auto;
 }
 
 /*HABILIDADES*/
